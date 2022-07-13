@@ -1,32 +1,3 @@
-<template>
-    <div class="card">
-        <div class="card__picture">
-            <picture>
-                <img src="@/assets/imgs/card-profiles/dunga.png" alt="Foto do cachorro Dunga">
-            </picture>
-        </div>
-        <div class="card__infos">
-            <div class="name">
-                <h1>Dunga</h1>
-            </div>
-            <div class="about">
-                <p>2 anos</p>
-                <p>Porte pequeno</p>
-                <p>Calmo e educado</p>
-            </div>
-            <div class="info">
-                <address class="info__adress">Rio de Janeiro (RJ)</address>
-                <router-link class="info__link">
-                    <img src="@/assets/imgs/icons/message-card.png" alt="">
-                    <p>
-                        Falar com responsável
-                    </p>
-                </router-link>
-            </div>
-        </div>
-    </div>
-</template>
-
 <script lang="ts">
 import { defineComponent } from "vue";
 
@@ -44,6 +15,7 @@ export default defineComponent({
     display: flex;
     justify-content: space-evenly;
     font-family: 'Poppins';
+    margin-bottom: 1.25rem;
 }
 
 .card__picture {
