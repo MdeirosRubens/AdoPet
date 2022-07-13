@@ -1,18 +1,15 @@
 <template class="template">
-  <HomeView/>
-  <footer>
-    <FooterView />
-  </footer>
+  <CardList />
+  
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import FooterView from './views/FooterView.vue';
-import HomeView from './views/HomeView.vue';
+import CardList from './views/CardList.vue';
 
 export default defineComponent({
   name: "App",
-  components: { FooterView, HomeView }
+  components: { CardList }
 }
 );
 </script>

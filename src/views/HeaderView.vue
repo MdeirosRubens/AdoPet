@@ -1,17 +1,17 @@
 <template>
 <header class="headerview">
-    <NavHome/>
+    <NavApp/>
 </header>
 </template>
 
 <script lang="ts">
 
 import { defineComponent } from "vue";
-import NavHome from "@/components/NavHome.vue";
+import NavApp from "@/components/NavApp.vue";
 
 export default defineComponent({
     Name: "HeaderView",
-    components: { NavHome }
+    components: { NavApp }
 })
 </script>
 

@@ -1,7 +1,7 @@
 <template>
-<div class="footer">
+<footer class="footer">
     <span class="footer__text">2022 - Desenvolvido por Rubens Medeiros.</span>
-</div>
+</footer>
 </template>
 
 <script lang="ts">
