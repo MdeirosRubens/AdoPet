@@ -1,4 +1,6 @@
-# adopet
+# AdoPet
+Web App para adoação de animais, atualmente está em processo de desenvolvimento, no estilo e nos breakpoints.
+Desenvolvido com CLI Vue.JS
 
 ## Project setup
 ```
