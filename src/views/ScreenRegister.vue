@@ -39,6 +39,7 @@
             </div>
         </form>
     </section>
+    <FooterView/>
 
 </template>
 
@@ -46,15 +47,21 @@
 
 import { defineComponent } from "vue";
 import HeaderView from "./HeaderView.vue";
+import FooterView from "./FooterView.vue";
 
 export default defineComponent({
     name: "TelaCadastro",
-    components: { HeaderView }
+    components: { HeaderView, FooterView }
 })
 
 </script>
 
 <style>
+
+.profilebutton {
+  display: none;
+}
+
 .patas-icon {
     z-index: 10;
     position: fixed;
@@ -67,7 +74,7 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 20%;
 }
 
@@ -121,11 +128,5 @@ export default defineComponent({
     border-radius: 6px;
     font-family: 'Poppins';
     text-align: center;
-}
-
-.form-button {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.25rem;
 }
 </style>

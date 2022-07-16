@@ -20,9 +20,6 @@ export default defineComponent({
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    top: 88%;
-    z-index: 10;
 }
 
 .footer__text {

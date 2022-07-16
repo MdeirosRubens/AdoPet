@@ -1,7 +1,7 @@
 <template>
-<header class="headerview">
-    <NavApp/>
-</header>
+    <header class="headerview">
+        <NavApp />
+    </header>
 </template>
 
 <script lang="ts">
@@ -22,4 +22,12 @@ export default defineComponent({
     width: 100%;
     height: 18.438rem;
 }
+
+@media (min-width: 768px) {
+    .headerview {
+        background-image: url(@/assets/imgs/background/Forma_alt.png);
+        height: 29.375rem;
+    }
+}
+
 </style>

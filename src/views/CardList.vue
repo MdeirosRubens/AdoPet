@@ -231,7 +231,7 @@ export default defineComponent({
 </script>
 
 <style>
-.text__span {
+/*.text__span {
     color: #3772FF;
     line-height: 1.25em;
     font-family: 'Poppins';
@@ -246,5 +246,5 @@ export default defineComponent({
 
 .text__span span {
     font-size: 1em;
-}
+}*/
 </style>

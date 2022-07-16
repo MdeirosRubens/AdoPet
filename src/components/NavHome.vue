@@ -31,4 +31,10 @@ export default defineComponent({
     display: flex;
     justify-content: space-around;
 }
+
+@media (min-width: 1140px) {
+    .separatedicon {
+        width: 30%;
+    }
+}
 </style>

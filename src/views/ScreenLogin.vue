@@ -1,46 +1,54 @@
 <template>
-    <div class="header-cadastro">
-        <HeaderView />
-    </div>
-    <img class="patas-icon" src="@/assets/imgs/patas.png" alt="Ilustração de Patas" />
-    <section class="container-cadastro">
-        <div class="logo">
-            <img src="@/assets/imgs/logos/logo_azul.svg" alt="">
+    <main class="main">
+        <div class="header-cadastro">
+            <HeaderView />
         </div>
-        <div class="desc-text">
-            <span class='quest-text__span'>Já tem conta? Faça seu login:</span>
-        </div>
-    </section>
-    <section class="formulario-section">
-        <form class="form" action="">
-            <div class="input-container">
-                <label for="input-label">Email</label>
-                <input class="input" type="email" placeholder="Escolha seu melhor email">
+        <img class="patas-icon" src="@/assets/imgs/patas.png" alt="Ilustração de Patas" />
+        <section class="container-cadastro">
+            <div class="logo">
+                <img src="@/assets/imgs/logos/logo_azul.svg" alt="">
             </div>
-            <div class="input-container">
-                <label for="input-label">Senha</label>
-                <input class="input" type="password" placeholder="Crie uma senha">
+            <div class="desc-text">
+                <span class='quest-text__span'>Já tem conta? Faça seu login:</span>
             </div>
-            <router-link class="forgot-pass">Esqueci minha senha</router-link>
-            <div class="form-button">
-                <button class="btn-small">Entrar</button>
-            </div>
-        </form>
-    </section>
+        </section>
+        <section class="formulario-section">
+            <form class="form" action="">
+                <div class="input-container">
+                    <label for="input-label">Email</label>
+                    <input class="input" type="email" placeholder="Escolha seu melhor email">
+                </div>
+                <div class="input-container">
+                    <label for="input-label">Senha</label>
+                    <input class="input" type="password" placeholder="Crie uma senha">
+                </div>
+                <router-link class="forgot-pass">Esqueci minha senha</router-link>
+                <div class="form-button">
+                    <button class="btn-small">Entrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <FooterView />
 </template>
 
 <script lang="ts">
 
 import { defineComponent } from "vue";
 import HeaderView from "./HeaderView.vue";
+import FooterView from "./FooterView.vue";
 
 export default defineComponent({
     name: "TelaLogin",
-    components: { HeaderView }
+    components: { HeaderView, FooterView }
 })
 </script>
 
 <style>
+.profilebutton {
+    display: none;
+}
+
 .patas-icon {
     z-index: 10;
     position: fixed;
@@ -53,7 +61,7 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 20%;
     left: 20%;
 }

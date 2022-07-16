@@ -1,20 +1,26 @@
 <template class="template">
-  <CardList />
-  
+  <HomeView />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import CardList from './views/CardList.vue';
+import HomeView from './views/HomeView.vue';
+
 
 export default defineComponent({
   name: "App",
-  components: { CardList }
+  components: { HomeView }
 }
 );
 </script>
 
 <style>
+.form-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
 .btn-small {
   width: 9.25rem;
   height: 2.5rem;
@@ -24,6 +30,7 @@ export default defineComponent({
   border-radius: 6px;
   font-weight: 600;
   line-height: 1.5em;
+  margin: 10px;
 }
 
 .btn-large {
@@ -40,6 +47,37 @@ export default defineComponent({
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
 }
+
+.text__span {
+  color: #3772FF;
+  line-height: 1.25em;
+  font-family: 'Poppins';
+  text-align: center;
+  top: 20%;
+  width: 16rem;
+  position: absolute;
+  left: 17%;
+  display: flex;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+
+  .btn-small {
+    width: 10.875rem;
+    height: 2.5rem;
+  }
+
+  .btn-large {
+    width: 22.625rem;
+    height: 3rem;
+    font-size: 1.125em;
+  }
+}
+
+
+/**A PARTIR DAQUI O ESTILO É COPIADO DO SCREENREGISTER, LEMBRAR DE REMOVER */
+
 
 html,
 body,
